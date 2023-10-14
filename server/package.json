@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "passport-auth0": "^1.4.3"
+  }
+}
