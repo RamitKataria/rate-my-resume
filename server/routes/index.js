@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { requiresAuth } = require('express-openid-connect');
 
 router.get('/', function (req, res, next) {
-  res.status(200).send('index', {
+  res.status(200).send({
     isAuthenticated: req.oidc.isAuthenticated()
   });
 });
