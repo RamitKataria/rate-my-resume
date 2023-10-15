@@ -2,6 +2,7 @@
 
 .angular
 16.2.6
+dist
 
 # dependencies
 /node_modules

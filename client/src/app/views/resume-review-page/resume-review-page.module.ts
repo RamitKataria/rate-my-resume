@@ -5,6 +5,8 @@ import { ResumeReviewPageRoutingModule } from './resume-review-page-routing.modu
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import {MatSliderModule} from '@angular/material/slider';
     CommonModule,
     ResumeReviewPageRoutingModule,
     PdfViewerModule,
-    MatSliderModule
+    MatSliderModule,
+    MatButtonModule
   ]
 })
 export class ResumeReviewPageModule { }
