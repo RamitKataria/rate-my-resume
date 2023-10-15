@@ -17,5 +17,7 @@ export class ResumeReviewPageComponent {
 
   submitResume() {
     this.currResumeSrc = this.demoService.getNextResumeSrc();
+    this.demoService.incrementResumesReviewed();
+    this.demoService.updateAccuracy();
   }
 }

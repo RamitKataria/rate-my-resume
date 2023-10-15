@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md">
-        <app-scorecard cardTitle="your resume score" cardSubtitle="6.54/10"
+        <app-scorecard cardTitle="your resume score" cardSubtitle="5.00/10"
           backgroundColorClass="darkblue"></app-scorecard>
       </div>
       <div class="col-md">
-        <app-scorecard cardTitle="your accuracy score" cardSubtitle="8.34/10"
+        <app-scorecard cardTitle="your accuracy score" cardSubtitle="{{accuracy}}/10"
         backgroundColorClass="mediumblue"></app-scorecard>
       </div>
     </div>
@@ -18,7 +18,7 @@
           backgroundColorClass="lightblue"></app-scorecard>
       </div>
       <div class="col-md">
-        <app-scorecard cardTitle="no. of resumes reviewed" cardSubtitle="42"
+        <app-scorecard cardTitle="no. of resumes reviewed" [cardSubtitle]="noOfResumesReviewed"
         backgroundColorClass="whiteblue"></app-scorecard>
       </div>
     </div>
