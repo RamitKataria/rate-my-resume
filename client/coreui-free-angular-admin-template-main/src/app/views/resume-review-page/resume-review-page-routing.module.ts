@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { ResumeReviewPageComponent } from './resume-review-page/resume-review-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DashboardPageComponent,
+    component: ResumeReviewPageComponent,
     data: {
-      title: $localize`Dashboard`
+      title: 'Resume Review Page'
     }
   }
 ];
@@ -16,5 +16,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule {
+export class ResumeReviewPageRoutingModule {
 }

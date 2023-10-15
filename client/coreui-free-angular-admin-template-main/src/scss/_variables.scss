@@ -118,7 +118,7 @@ $enable-deprecation-messages: false;
 // scss-docs-end theme-colors-map
 
 // Text colors
-// $high-emphasis-dark:    rgba(shift-color($gray-base, +26), .87);
+// $high-emphasis-dark:    rgba(shift-color($blue, +26), .87);
 // $medium-emphasis-dark:  rgba(shift-color($gray-base, +26), .6);
 // $disabled-dark:         rgba(shift-color($gray-base, +26), .38);
 
@@ -311,8 +311,8 @@ $enable-deprecation-messages: false;
 //
 // Settings for the `<body>` element.
 
-// $body-bg:                   $white;
-// $body-color:                $high-emphasis-dark;
+$body-bg:                   #FFFFFF;
+// body-color:                #FFFFFF;
 // $body-text-align:           null;
 
 
@@ -444,7 +444,7 @@ $enable-deprecation-messages: false;
 // $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // stylelint-enable value-keyword-case
-// $font-family-base:            var(--#{$variable-prefix}font-sans-serif);
+$font-family-base:            "Maven Pro";
 // $font-family-code:            var(--#{$variable-prefix}font-monospace);
 
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
@@ -1534,7 +1534,7 @@ $enable-deprecation-messages: false;
 // $sidebar-padding-y:                        0;
 // $sidebar-padding-x:                        0;
 // $sidebar-color:                            $high-emphasis-light;
-// $sidebar-bg:                               $gray-base;
+$sidebar-bg:                               #093056;
 // $sidebar-border-width:                     0;
 // $sidebar-border-color:                     transparent;
 // $sidebar-transition:                       margin-left .15s, margin-right .15s, box-shadow .075s, transform .15s, width .15s, z-index 0s ease .15s;
@@ -1542,7 +1542,7 @@ $enable-deprecation-messages: false;
 
 // $sidebar-brand-height:                     4rem;
 // $sidebar-brand-color:                      $high-emphasis-light;
-// $sidebar-brand-bg:                         rgba($black, .2);
+$sidebar-brand-bg:                         #FFFFFF;
 
 // $sidebar-header-height:                    4rem;
 // $sidebar-header-padding-y:                 .75rem;
@@ -1556,26 +1556,26 @@ $enable-deprecation-messages: false;
 // $sidebar-backdrop-opacity:                 .5;
 // $sidebar-backdrop-transition:              opacity .15s linear;
 
-// $sidebar-nav-title-padding-y:              .75rem;
-// $sidebar-nav-title-padding-x:              1rem;
+$sidebar-nav-title-padding-y:              1rem;
+$sidebar-nav-title-padding-x:              1.5rem;
 // $sidebar-nav-title-margin-top:             1rem;
 // $sidebar-nav-title-color:                  $medium-emphasis-light;
 // $sidebar-nav-title-transition:             height .15s, margin .15s;
 
 // $sidebar-nav-link-padding-y:               .8445rem;
 // $sidebar-nav-link-padding-x:               1rem;
-// $sidebar-nav-link-color:                   $medium-emphasis-light;
+$sidebar-nav-link-color:                   #adcdea;
 // $sidebar-nav-link-bg:                      transparent;
 // $sidebar-nav-link-transition:              background .15s ease, color .15s ease;
-// $sidebar-nav-link-icon-color:              $medium-emphasis-light;
+$sidebar-nav-link-icon-color:              #adcdea;
 
 // $sidebar-nav-link-hover-color:             $high-emphasis-light;
 // $sidebar-nav-link-hover-bg:                rgba($white, .05);
 // $sidebar-nav-link-hover-icon-color:        $high-emphasis-light;
 
-// $sidebar-nav-link-active-color:            $high-emphasis-light;
+$sidebar-nav-link-active-color:            #5AA9F5;
 // $sidebar-nav-link-active-bg:               rgba($white, .05);
-// $sidebar-nav-link-active-icon-color:       $high-emphasis-light;
+$sidebar-nav-link-active-icon-color:        #5AA9F5;
 
 // $sidebar-nav-link-disabled-color:          $disabled-light;
 // $sidebar-nav-link-disabled-icon-color:     $sidebar-nav-link-icon-color;
@@ -1601,12 +1601,12 @@ $enable-deprecation-messages: false;
 // $sidebar-footer-bg:                        rgba($black, .2);
 // $sidebar-footer-height-transition:         height .15s, padding .15s;
 
-// $sidebar-toggler-height:                   3rem;
+$sidebar-toggler-height:                   0rem;
 // $sidebar-toggler-bg:                       rgba($black, .2);
 // $sidebar-toggler-transition:               transform .15s;
 
-// $sidebar-toggler-indicator-width:          4rem;
-// $sidebar-toggler-indicator-height:         3rem;
+$sidebar-toggler-indicator-width:          0rem;
+$sidebar-toggler-indicator-height:         0rem;
 // $sidebar-toggler-indicator-color:          $gray-600;
 // $sidebar-toggler-indicator:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-toggler-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
 // $sidebar-toggler-hover-bg:                 rgba(0, 0, 0, .3);
