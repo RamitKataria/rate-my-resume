@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <pdf-viewer [src]="'assets/pdfs/testpdf.pdf'" [render-text]="true" [original-size]="false"
+                    <pdf-viewer [src]="currResumeSrc" [render-text]="true" [original-size]="false"
                         style="width: 100%; height: 450px"></pdf-viewer>
                 </div>
                 <div class="col-md-1"></div>
@@ -17,7 +17,7 @@
                     <mat-slider min="1" max="10" step="1" value="1.5" color = "primary"thumbLabel tickInterval="auto">
                         <input matSliderThumb #rating>
                     </mat-slider>
-                    <button mat-flat-button color="primary">SUBMIT</button>
+                    <button mat-flat-button color="primary" (click)="submitResume()">SUBMIT</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
