@@ -1,6 +1,10 @@
 {
   "name": "resume-game-server",
-  "scripts": {},
+  "scripts": {
+    "start": "node ./server",
+    "dev": "nodemon ./server",
+    "build-client": "cd ../client && npm install && npm run build"
+  },
   "dependencies": {
     "debug": "~3.2.7",
     "dotenv": "^6.1.0",
@@ -9,5 +13,8 @@
     "express-openid-connect": "^2.17.0",
     "http-errors": "~1.8.1",
     "morgan": "~1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
