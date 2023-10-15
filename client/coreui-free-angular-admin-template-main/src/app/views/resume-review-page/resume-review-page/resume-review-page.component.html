@@ -1,1 +1,24 @@
-<h1 class="fs-2 pt-4 ps-3">resume review</h1>
+<h1 class="fs-1 pt-4 ps-3">resume review</h1>
+<div class="py-5">
+    <div class="d-flex justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <pdf-viewer [src]="'assets/pdfs/testpdf.pdf'" [render-text]="true" [original-size]="false"
+                        style="width: 100%; height: 450px"></pdf-viewer>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 d-flex justify-content-center">
+                    <mat-slider min="1" max="10" step="0.5" value="1.5" color="warn">
+                        <input matSliderThumb>
+                    </mat-slider>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>

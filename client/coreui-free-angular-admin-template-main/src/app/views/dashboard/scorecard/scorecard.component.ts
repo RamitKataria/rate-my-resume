@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-scorecard',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./scorecard.component.scss']
 })
 export class ScorecardComponent {
-
+  @Input({ required: true }) backgroundColorClass!: String;
+  @Input({ required: true }) cardTitle!: String;
+  @Input({ required: true }) cardSubtitle!: String;
 }
