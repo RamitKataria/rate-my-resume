@@ -12,7 +12,7 @@ router.get('/user', requiresAuth(), function (req, res, next) {
   const user = req.oidc.user;
   res.status(200).send({
     picture: user.picture,
-    userID: user.sub
+    name: "Placeholder Name"
   });
 });
 

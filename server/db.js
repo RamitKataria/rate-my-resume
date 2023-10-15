@@ -31,7 +31,7 @@ const mongoose = require('mongoose');
 const ResumeSchema = new mongoose.Schema({
     id: {type: String, index: true, unique: true},
     user: {type: String, ref: 'User'},
-    image: String,
+    resourceLink: String,
     reviews: [{type: mongoose.Schema.Types.ObjectId, ref: 'Review'}]
 });
 
