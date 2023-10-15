@@ -5,8 +5,11 @@
         <c-card class="mx-4">
           <c-card-body class="p-4">
             <form cForm>
-              <h1>Register</h1>
-              <p class="text-medium-emphasis">Create your account</p>
+              <div style="text-align: center;">
+                <img style="max-width: 20vw;" src="assets/images/logo.png">
+                <h2 class="pt-5">Get your resume reviewed today.</h2>
+                <h5 class="pb-5" style="font-weight: 300;">Register now.</h5>
+              </div>
               <c-input-group class="mb-3">
                 <span cInputGroupText>
                   <svg cIcon name="cilUser"></svg>
@@ -30,7 +33,7 @@
                 <input autoComplete="new-password" cFormControl placeholder="Repeat password" type="password" />
               </c-input-group>
               <div class="d-grid">
-                <button cButton color="success" [routerLink]="['/resume-upload']">Create Account</button>
+                <button cButton color="success" style="color: white;" [routerLink]="['/resume-upload']">Create Account</button>
               </div>
             </form>
           </c-card-body>
