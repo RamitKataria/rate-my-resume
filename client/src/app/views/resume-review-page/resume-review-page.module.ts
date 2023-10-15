@@ -6,6 +6,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatButtonModule} from '@angular/material/button';
     ResumeReviewPageRoutingModule,
     PdfViewerModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ]
 })
 export class ResumeReviewPageModule { }
