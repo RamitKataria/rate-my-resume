@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
- mongoose.connect(process.env.MONGODB_URI);
+console.log('Mongo URI:' + process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 const ResumeSchema = new mongoose.Schema({
     id: {type: String, index: true, unique: true},
