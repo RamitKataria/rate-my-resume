@@ -1525,7 +1525,7 @@ $font-family-base:            "Maven Pro";
 // scss-docs-end carousel-variables
 
 // scss-docs-start sidebar-variables
-// $sidebar-width:                            16rem;
+$sidebar-width:                            20rem;
 // $sidebar-widths: (
 //   sm: 12rem,
 //   lg: 20rem,
@@ -1556,7 +1556,7 @@ $sidebar-brand-bg:                         #FFFFFF;
 // $sidebar-backdrop-opacity:                 .5;
 // $sidebar-backdrop-transition:              opacity .15s linear;
 
-$sidebar-nav-title-padding-y:              1rem;
+$sidebar-nav-title-padding-y:              2rem;
 $sidebar-nav-title-padding-x:              1.5rem;
 // $sidebar-nav-title-margin-top:             1rem;
 // $sidebar-nav-title-color:                  $medium-emphasis-light;

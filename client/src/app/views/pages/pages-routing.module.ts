@@ -4,8 +4,16 @@ import { Page404Component } from './page404/page404.component';
 import { Page500Component } from './page500/page500.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ResumeUploadComponent } from './resume-upload/resume-upload.component';
 
 const routes: Routes = [
+  {
+    path: 'resume-upload',
+    component: ResumeUploadComponent,
+    data: {
+      title: 'Resume Upload'
+    }
+  },
   {
     path: '404',
     component: Page404Component,
