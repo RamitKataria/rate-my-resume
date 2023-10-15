@@ -11,7 +11,7 @@ import { ResumeUploadComponent } from './views/pages/resume-upload/resume-upload
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'register',
     pathMatch: 'full'
   },
   {
