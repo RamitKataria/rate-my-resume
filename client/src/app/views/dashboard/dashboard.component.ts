@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 import { DashboardChartsData, IChartProps } from './dashboard-charts-data';
+import { DemoService } from 'src/services/demo.service';
 
 interface IUser {
   name: string;
@@ -23,5 +24,14 @@ interface IUser {
   styleUrls: ['dashboard.component.scss']
 })
 export class DashboardComponent {
+  noOfReviewers: number = 0;
+  noOfResumesReviewed: string;
+  accuracy: string;
 
+  constructor(
+    private demoService: DemoService
+  ) {
+    this.noOfResumesReviewed = this.demoService.getResumesReviewed().toString();
+    this.accuracy = parseFloat(this.demoService.getAccuracy().toString()).toFixed(2);
+  }
 }

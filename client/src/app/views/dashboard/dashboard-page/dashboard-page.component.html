@@ -1,8 +1,8 @@
-<div *ngIf="true">
+<div *ngIf="noOfResumesReviewed >= 3">
     <h1 class="fs-1 pt-4 ps-3">dashboard</h1>
     <app-inner-dashboard></app-inner-dashboard>
 </div>
 
-<div *ngIf="false">
+<div *ngIf="noOfResumesReviewed < 3">
     <app-dashboard-uninitiated></app-dashboard-uninitiated>
 </div>
