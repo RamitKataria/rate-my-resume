@@ -21,9 +21,14 @@ const routes: Routes = [
     },
     children: [
       {
-        path: 'dashboard',
+        path: 'dashboard-page',
         loadChildren: () =>
           import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
+      },
+      {
+        path: 'resume-review-page',
+        loadChildren: () =>
+          import('./views/resume-review-page/resume-review-page.module').then((m) => m.ResumeReviewPageModule)
       },
       {
         path: 'theme',

@@ -19,8 +19,10 @@ import { ChartjsModule } from '@coreui/angular-chartjs';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component'
 
 import { WidgetsModule } from '../widgets/widgets.module';
+import { ScorecardComponent } from './scorecard/scorecard.component';
 
 @NgModule({
   imports: [
@@ -42,7 +44,7 @@ import { WidgetsModule } from '../widgets/widgets.module';
     TableModule,
     WidgetsModule
   ],
-  declarations: [DashboardComponent]
+  declarations: [DashboardComponent, DashboardPageComponent, ScorecardComponent]
 })
 export class DashboardModule {
 }
