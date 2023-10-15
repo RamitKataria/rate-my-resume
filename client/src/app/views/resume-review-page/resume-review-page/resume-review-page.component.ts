@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DemoService } from 'src/services/demo.service'
 
 @Component({
   selector: 'app-resume-review-page',
@@ -6,4 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./resume-review-page.component.scss']
 })
 export class ResumeReviewPageComponent {
+  currResumeSrc: string;
+  
+  constructor(
+    private demoService: DemoService
+  ) {
+    this.currResumeSrc = demoService.getNextResumeSrc();
+  }
+
+  submitResume() {
+    this.currResumeSrc = this.demoService.getNextResumeSrc();
+  }
 }
