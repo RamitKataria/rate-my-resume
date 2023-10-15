@@ -23,6 +23,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 
 import { WidgetsModule } from '../widgets/widgets.module';
 import { ScorecardComponent } from './scorecard/scorecard.component';
+import { DashboardUninitiatedComponent } from './dashboard-uninitiated/dashboard-uninitiated.component';
 
 @NgModule({
   imports: [
@@ -44,7 +45,7 @@ import { ScorecardComponent } from './scorecard/scorecard.component';
     TableModule,
     WidgetsModule
   ],
-  declarations: [DashboardComponent, DashboardPageComponent, ScorecardComponent]
+  declarations: [DashboardComponent, DashboardPageComponent, ScorecardComponent, DashboardUninitiatedComponent]
 })
 export class DashboardModule {
 }
